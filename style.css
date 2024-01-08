@@ -1,0 +1,135 @@
+/* Normal Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff
+}
+
+body {
+    min-height: 100vh;
+    background: #000;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    height: 330px;
+    width: 330px;
+    border-radius: 50%;
+    background: linear-gradient(#08ffe6, #fcd200);
+    transform: translate(-490px, -150px)
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background: linear-gradient(#fcd200, #fc200e);
+    transform: translate(490px, 120px)
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    height: 330px;
+    width: 330px;
+    border-radius: 50%;
+    background: linear-gradient(#08ffe6, #fcd200);
+    transform: translate(-490px, -150px)
+}
+
+.container__ball-1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #04f504;
+    translate: -250px 200px;
+
+
+}
+
+.container__ball-2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #08e2ff;
+    translate: -10px -230px;
+
+
+}
+
+.container__ball-3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffc404;
+    translate: 150px 205px;
+}
+
+.container__box {
+    width: 75%;
+    height: 86vh;
+    padding: 0.20px;
+    background: linear-gradient (255, 255, 255, 0.1);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(25px);
+    z-index: 10;
+    position: relative;
+    display: flex;
+    box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
+
+}
+
+nav {
+    height: 7%;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.container__logo {
+    font-size: 2rem;
+    color: gray;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: bold;
+
+}
+
+.container__li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #ffc404
+}
